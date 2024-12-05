@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-username/system-time-script.git'
+                git 'https://github.com/riot020/exam.git'
             }
         }
         stage('Run Script') {
             steps {
-                sh './display-time.sh'
+                sh './time.sh'
             }
         }
     }
